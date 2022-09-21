@@ -57,6 +57,8 @@ embedding_matrix = np.zeros((num_tokens, embedding_dim))
 for w, i in tokenizer.word_index.items():
   embedding_matrix[i] = nlp.vocab[w].vector
 ```
+> **Note**: With libraries like Gensim, you can train word vectors on your own corpus [Training Your Own Model](https://radimrehurek.com/gensim/auto_examples/tutorials/run_word2vec.html#training-your-own-model).
+
 As a clissifier, we'll use a widely-used transformer architecture for text classification (can be found in keras documentation at https://keras.io/examples/nlp/text_classification_with_transformer/)
 ```python
 from tensorflow.keras import layers
