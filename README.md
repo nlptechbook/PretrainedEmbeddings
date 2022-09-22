@@ -130,3 +130,11 @@ The output illustrates that the submitted sentence: 'We had to remove this scrip
 ```python
 array([[0.19706866, 0.79670817, 0.00223614, 0.00398708]], dtype=float32) 
 ```
+The following simple test explains why it works this way:
+
+print(nlp('delete').similarity(nlp('remove')))
+0.6060407751427294
+print(nlp('develop').similarity(nlp('remove')))
+0.3461188112680473
+
+The above reveals that 'remove' is much closer to 'delete' in the vector space than it is to 'develop'.
