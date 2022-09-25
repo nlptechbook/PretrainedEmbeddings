@@ -1,6 +1,8 @@
 # Pre-trained Word Embeddings in an Embedding Layer
 
-In text classification tasks, the ability of model to "understand" the semantic similarity of words is extremely important. People may express the same thoughts with different words, synonyms. If your NLP classification model can recognize such similarities, you can expect it to produce more accurate predictions. This assigment illustrates this idea in action, showing how you can use pre-trained word embeddings where semantically related words appear closer to each other in the word embedding space.
+In text classification tasks, the ability of model to "understand" the semantic similarity of words is extremely important. People may express the same thoughts with different words, synonyms. If your NLP classification model can recognize such similarities, you can expect it to produce more accurate predictions. 
+
+This assigment illustrates how you can take advantage of a vector representation that preserves the contextual similarity of words, showing how you can use pre-trained word embeddings where semantically related words appear closer to each other in the word embedding space.
 
 Let's create a few sentences to play with. In the following sample, note that the first, second, and last sentence differ by one word found in the forth position. Also note that the words in question in the second and the last sentence are synonyms.
 
